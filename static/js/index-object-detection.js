@@ -2,8 +2,8 @@
 const video = document.getElementById("test-image");
 const liveView = document.getElementById("liveView");
 const demosSection = document.getElementById("demos");
-const enableWebcamButton = document.getElementById("webcamButton");
-enableWebcamButton.addEventListener("click", enableCam);
+const enablePredictButton = document.getElementById("predictButton");
+enablePredictButton.addEventListener("click", predictObjects);
 
 /* 
 
@@ -45,13 +45,13 @@ function enableCam(event) {
 
 */
 
-function enableCam(event) {
+function predictObjects(event) {
   // Only continue if the COCO-SSD has finished loading.
   if (!model) {
     return;
   }
 
-  predictWebcam()
+  predict()
 
   };
 
@@ -68,7 +68,7 @@ tflite.ObjectDetector.create(
 
 var children = [];
 
-function predictWebcam() {
+function predict() {
 
   const predictions = model.detect(video);
 

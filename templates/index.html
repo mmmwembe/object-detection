@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TFLITE Web API Live Object Detection Example</title>
+    <title>TFLITE Web API Object Detection</title>
     <meta charset="utf-8">
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="/static/css/obj-detection-style.css">
@@ -24,7 +24,7 @@
         <p>Hold some objects up close to your webcam to get a real-time classification! <br> When ready click "enable webcam" below and accept access to the webcam when the browser asks (check the top left of your window)</p>
         
         <div id="liveView" class="camView">
-            <button id="webcamButton">Enable Webcam</button>
+            <button id="predictButton">Enable Webcam</button>
             <img id="test-image" src="/static/project-test-images/dust/test-image1.JPG" alt="face to detect" width="640" height="480">
             <!--video id="webcam" autoplay muted width="640" height="480"></video-->
         </div>
