@@ -1,5 +1,5 @@
 // based on https://codelabs.developers.google.com/codelabs/tensorflowjs-object-detection
-const video = document.getElementById("webcam");
+const video = document.getElementById("test-image");
 const liveView = document.getElementById("liveView");
 const demosSection = document.getElementById("demos");
 const enableWebcamButton = document.getElementById("webcamButton");
@@ -69,13 +69,17 @@ tflite.ObjectDetector.create(
 var children = [];
 
 function predictWebcam() {
+  
   const predictions = model.detect(video);
 
   // Remove any highlighting we did previous frame.
+
+  /*
   for (let i = 0; i < children.length; i++) {
     liveView.removeChild(children[i]);
   }
   children.splice(0);
+ */
 
   // Now lets loop through predictions and draw them to the live view if
   // they have a high confidence score.
