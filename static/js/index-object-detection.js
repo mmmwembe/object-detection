@@ -117,5 +117,5 @@ function predictWebcam() {
     }
   }
   // Call this function again to keep predicting when the browser is ready.
-  window.requestAnimationFrame(predictWebcam);
+  // window.requestAnimationFrame(predictWebcam);
 }
