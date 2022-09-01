@@ -9,7 +9,7 @@ body {
     color: #ff6f00;
   }
   
-  image {
+  img {
     display: block;
   }
   
@@ -29,7 +29,7 @@ body {
   .camView {
     position: relative;
     float: left;
-    width: calc(100% - 20px);
+    width: calc(100%);  /* 100% - 20px  */
     margin: 10px;
     cursor: pointer;
   }
