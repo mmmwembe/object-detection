@@ -57,9 +57,9 @@ function predictObjects(event) {
 
 // Store the resulting model in the global scope of our app.
 var model = undefined;
-
+// https://tfhub.dev/tensorflow/lite-model/ssd_mobilenet_v1/1/metadata/2?lite-format=tflite   
 tflite.ObjectDetector.create(
-  "https://tfhub.dev/tensorflow/lite-model/ssd_mobilenet_v1/1/metadata/2?lite-format=tflite"
+  "https://storage.googleapis.com/2021_tflite_glitch_models/stack-plume-dust-object-detection/obj-detection-dust-model.tflite"
 ).then((loadedModel) => {
   model = loadedModel;
   // Show demo section now model is ready to use.
